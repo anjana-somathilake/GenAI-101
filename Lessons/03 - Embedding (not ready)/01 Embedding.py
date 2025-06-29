@@ -1,7 +1,7 @@
 from langchain_ollama import OllamaEmbeddings
 
 embeddings = OllamaEmbeddings(model="all-minilm")
-# embeddings = OllamaEmbeddings(model="llama3.1")
+# embeddings = OllamaEmbeddings(model="qwen2:0.5b")
 # embeddings = OllamaEmbeddings(model="gemma3:1b") # (status code: 500)
 
 embedding_vector = embeddings.embed_query("Hello, world")
