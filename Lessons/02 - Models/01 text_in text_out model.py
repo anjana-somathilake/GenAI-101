@@ -5,7 +5,8 @@ from langchain_ollama import OllamaLLM
 llm = OllamaLLM(model="qwen2:0.5b")
 
 template = PromptTemplate.from_template(
-    "Generate a detailed prompt as a expert in fantasy story writing for an LLM to this given {basic_prompt} and limit to 100 words"
+    "As an expert in fantasy story writing, generate a detailed and imaginative prompt for a language model based on "
+    "the following input: {basic_prompt}. Keep the final prompt rich in fantasy elements and limit it to 100 words."
 )
 
 
