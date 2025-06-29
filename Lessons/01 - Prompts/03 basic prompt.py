@@ -10,8 +10,8 @@ template = PromptTemplate.from_template(
 
 # prompt = template.format(product="organic toothpase")
 prompt = template.format(product="ceylon cinamon tea")
-# prompt = template.format(product="organic toothpase")
-# prompt = template.format(product="organic toothpase")
+# prompt = template.format(product="jack fruit chips")
+# prompt = template.format(product="pol katu aguru")
 
 response = llm.invoke(prompt)
 print(response)
