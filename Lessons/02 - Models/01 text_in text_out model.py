@@ -10,7 +10,9 @@ template = PromptTemplate.from_template(
 )
 
 
-prompt = template.format(basic_prompt="write a poem about a dog")
+idea = input("input >")
+# prompt = template.format(basic_prompt="write a poem about a dog")
+prompt = template.format(basic_prompt=idea)
 
 response = llm.invoke(prompt)
 print(response)
