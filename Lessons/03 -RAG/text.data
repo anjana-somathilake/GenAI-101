@@ -1,0 +1,12 @@
+1. Take a list of separators, in order of importance. By default these are:
+a. The paragraph separator: \n\n
+b. The line separator: \n
+c. The word separator: space character
+2. To respect the given chunk size, for instance, 1,000 characters, start by splitting
+up paragraphs.
+3. For any paragraph longer than the desired chunk size, split by the next separator:
+lines. Continue until all chunks are smaller than the desired length, or there are
+no additional separators to try.
+4. Emit each chunk as a Document, with the metadata of the original document
+passed in and additional information about the position in the original
+document.
