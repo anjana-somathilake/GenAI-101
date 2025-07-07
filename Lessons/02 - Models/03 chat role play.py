@@ -5,7 +5,7 @@ def role_play_chat():
     print("🎭 You are now talking to your manager Athula Bandara.")
     print("... good luck!\n")
 
-    model_name = "" # gemma3:1b #
+    model_name = "llama3.1:latest" # gemma3:1b #
 
     # Initial system message to set the role-play context
     messages = [
